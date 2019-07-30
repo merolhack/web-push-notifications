@@ -20,6 +20,12 @@
         },
       });
     });
+    OneSignal.push(function () {
+      OneSignal.SERVICE_WORKER_PARAM = { scope: '/web-push-notifications' };
+      OneSignal.SERVICE_WORKER_PATH = 'web-push-notifications/OneSignalSDKWorker.js'
+      OneSignal.SERVICE_WORKER_UPDATER_PATH = 'web-push-notifications/OneSignalSDKUpdaterWorker.js'
+      OneSignal.init(initConfig);
+    });
   </script>
 <link rel="stylesheet" href="styles.ef6b282d76f69c3be7d1.css"></head>
 
