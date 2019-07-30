@@ -12,14 +12,12 @@
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
   <script>
     var OneSignal = window.OneSignal || [];
-    OneSignal.push(function () {
-      OneSignal.init({
+    var initConfig = {
         appId: "0c3c77da-87d4-4fee-853c-a103fa667ca8",
         notifyButton: {
-          enable: true,
+            enable: true
         },
-      });
-    });
+    };
     OneSignal.push(function () {
       OneSignal.SERVICE_WORKER_PARAM = { scope: 'https://merolhack.github.io/web-push-notifications' };
       OneSignal.SERVICE_WORKER_PATH = 'web-push-notifications/OneSignalSDKWorker.js'
