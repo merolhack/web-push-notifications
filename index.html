@@ -21,7 +21,7 @@
       });
     });
     OneSignal.push(function () {
-      OneSignal.SERVICE_WORKER_PARAM = { scope: '/web-push-notifications' };
+      OneSignal.SERVICE_WORKER_PARAM = { scope: 'https://merolhack.github.io/web-push-notifications' };
       OneSignal.SERVICE_WORKER_PATH = 'web-push-notifications/OneSignalSDKWorker.js'
       OneSignal.SERVICE_WORKER_UPDATER_PATH = 'web-push-notifications/OneSignalSDKUpdaterWorker.js'
       OneSignal.init(initConfig);
