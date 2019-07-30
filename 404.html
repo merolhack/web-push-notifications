@@ -1,13 +1,30 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>WebPushNotifications</title>
+  <title>Web Push Notifications</title>
   <base href="/web-push-notifications/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="manifest" href="manifest.json" />
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "0c3c77da-87d4-4fee-853c-a103fa667ca8",
+        notifyButton: {
+          enable: true,
+        },
+      });
+    });
+  </script>
 <link rel="stylesheet" href="styles.ef6b282d76f69c3be7d1.css"></head>
+
 <body>
   <app-root></app-root>
 <script src="runtime-es2015.703a23e48ad83c851e49.js" type="module"></script><script src="polyfills-es2015.03a238df37b9ded928f4.js" type="module"></script><script src="runtime-es5.465c2333d355155ec5f3.js" nomodule></script><script src="polyfills-es5.2fd2521ffb5158e1e1b0.js" nomodule></script><script src="main-es2015.caa50b8b868c922dcb07.js" type="module"></script><script src="main-es5.940973372ba71c9d42d8.js" nomodule></script></body>
+
 </html>
