@@ -5,30 +5,16 @@
   <meta charset="utf-8">
   <title>Web Push Notifications</title>
   <base href="/web-push-notifications/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <link rel="manifest" href="manifest.json" />
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-  <script>
-    var OneSignal = window.OneSignal || [];
-    var initConfig = {
-        appId: "0c3c77da-87d4-4fee-853c-a103fa667ca8",
-        notifyButton: {
-            enable: true
-        },
-    };
-    OneSignal.push(function () {
-      OneSignal.SERVICE_WORKER_PARAM = { scope: 'https://merolhack.github.io/web-push-notifications' };
-      OneSignal.SERVICE_WORKER_PATH = 'web-push-notifications/OneSignalSDKWorker.js'
-      OneSignal.SERVICE_WORKER_UPDATER_PATH = 'web-push-notifications/OneSignalSDKUpdaterWorker.js'
-      OneSignal.init(initConfig);
-    });
-  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
 <link rel="stylesheet" href="styles.ef6b282d76f69c3be7d1.css"></head>
 
 <body>
   <app-root></app-root>
-<script src="runtime-es2015.703a23e48ad83c851e49.js" type="module"></script><script src="polyfills-es2015.03a238df37b9ded928f4.js" type="module"></script><script src="runtime-es5.465c2333d355155ec5f3.js" nomodule></script><script src="polyfills-es5.2fd2521ffb5158e1e1b0.js" nomodule></script><script src="main-es2015.caa50b8b868c922dcb07.js" type="module"></script><script src="main-es5.940973372ba71c9d42d8.js" nomodule></script></body>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<script src="runtime-es2015.703a23e48ad83c851e49.js" type="module"></script><script src="polyfills-es2015.03a238df37b9ded928f4.js" type="module"></script><script src="runtime-es5.465c2333d355155ec5f3.js" nomodule></script><script src="polyfills-es5.2fd2521ffb5158e1e1b0.js" nomodule></script><script src="main-es2015.bf26bb4228b2ae35e6af.js" type="module"></script><script src="main-es5.0251eddddbb1c575ae7a.js" nomodule></script></body>
 
 </html>
