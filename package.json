@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href \"https://merolhack.github.io/merolhack/\" && ngh"
+    "deploy": "ng build --prod --base-href=/web-push-notifications/ && ngh --dir dist/web-push-notifications"
   },
   "private": true,
   "dependencies": {
