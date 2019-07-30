@@ -4,15 +4,20 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ToastsComponent } from './components/toasts/toasts.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToastsComponent
+    ToastsComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

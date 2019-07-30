@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     console.log(this.toastService);
   }
 
-  addToast(type: string = '', template) {
+  addToast(type: string = '', template: any = null) {
     switch (type) {
       case 'success':
         this.toastService.show(null, 'I am a success toast', { classname: 'bg-success text-light', delay: 10000 });
