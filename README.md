@@ -1,4 +1,6 @@
-# WebPushNotifications
+# web-push-notifications
+
+> Testing the different ways to show a notification to the user
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
