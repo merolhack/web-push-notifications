@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwUpdate } from '@angular/service-worker';
 import { ToastService } from 'src/app/services';
 
 @Component({
@@ -9,14 +10,26 @@ import { ToastService } from 'src/app/services';
 export class AppComponent implements OnInit {
   toastService: ToastService;
 
-  constructor(toastService: ToastService) {
+  constructor(toastService: ToastService, private swUpdate: SwUpdate) {
     this.toastService = toastService;
   }
 
   ngOnInit() {
-    console.log(this.toastService);
+    if (this.swUpdate.isEnabled) {
+      this.swUpdate.available.subscribe(() => {
+        if (confirm('New version available. Load New Version?')) {
+          window.location.reload();
+        }
+      });
+    }
   }
 
+  /**
+   * Add a toast component
+   *
+   * @param type string
+   * @param template any
+   */
   addToast(type: string = '', template: any = null) {
     switch (type) {
       case 'success':
