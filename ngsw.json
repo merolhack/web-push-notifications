@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1564517911325,
+  "timestamp": 1564532043755,
   "index": "/web-push-notifications/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/web-push-notifications/favicon.ico",
         "/web-push-notifications/index.html",
-        "/web-push-notifications/main-es2015.bf26bb4228b2ae35e6af.js",
-        "/web-push-notifications/main-es5.0251eddddbb1c575ae7a.js",
+        "/web-push-notifications/main-es2015.2867ba18828d4db74f49.js",
+        "/web-push-notifications/main-es5.fc3adf819e75781b615b.js",
         "/web-push-notifications/polyfills-es2015.03a238df37b9ded928f4.js",
         "/web-push-notifications/polyfills-es5.2fd2521ffb5158e1e1b0.js",
         "/web-push-notifications/runtime-es2015.703a23e48ad83c851e49.js",
@@ -48,9 +48,9 @@
     "/web-push-notifications/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/web-push-notifications/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/web-push-notifications/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/web-push-notifications/index.html": "39ef032a9e1472db521379188e222323cbfa9154",
-    "/web-push-notifications/main-es2015.bf26bb4228b2ae35e6af.js": "1a80edba2ea140917e3cddb07d7517db34f7b5b1",
-    "/web-push-notifications/main-es5.0251eddddbb1c575ae7a.js": "19a9cf18447b8059a1e260fe9f2a55be2c2b8b6e",
+    "/web-push-notifications/index.html": "a77bdf8f563ece046a19a1c7e2059de4b3428404",
+    "/web-push-notifications/main-es2015.2867ba18828d4db74f49.js": "11e08b4badbaf841f1d8342c017ea0b819aaa341",
+    "/web-push-notifications/main-es5.fc3adf819e75781b615b.js": "70d9b2c065109b39208adba2a82aefb4ed6482e8",
     "/web-push-notifications/polyfills-es2015.03a238df37b9ded928f4.js": "058203dab4ba87056d6976029ba60fa42e6f75b9",
     "/web-push-notifications/polyfills-es5.2fd2521ffb5158e1e1b0.js": "396607375c807097fbb909c1d489ddca619b177c",
     "/web-push-notifications/runtime-es2015.703a23e48ad83c851e49.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
