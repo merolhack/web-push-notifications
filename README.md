@@ -28,6 +28,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ```bash
 ng g s services/Toast
+ng g s services/newsletter
 ```
 
 ### Components
