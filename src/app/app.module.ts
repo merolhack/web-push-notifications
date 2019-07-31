@@ -1,11 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { AppComponent } from './app.component';
-import { ToastsComponent } from './components/toasts/toasts.component';
-import { NotificationsComponent } from './components/notifications/notifications.component';
+import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
+/**
+ * Packages
+ */
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+/**
+ * Custom services, components, etc.
+ */
+import { AppComponent } from './app.component';
+import { ToastService, NewsletterService } from './services';
+import { ToastsComponent, NotificationsComponent } from './components';
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -16,10 +22,14 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    NgbModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    NgbModule
   ],
-  providers: [],
+  providers: [
+    ToastService,
+    NewsletterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
